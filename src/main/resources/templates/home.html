@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+    <h2>Multi DataSource with RoutingDataSource</h2>
+
+    <h3>/publisher/* ==> Using Publisher-DB</h3>
+    <ul>
+        <li><a th:href="@{/publisher/list}">Show Publisher List</a> </li>
+    </ul>
+
+    <h3>/advertiser/* ==> Using Advertiser-DB</h3>
+    <ul>
+        <li><a th:href="@{/advertiser/list}">Show Advertiser List</a> </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Advertiser System</title>
+</head>
+<body>
+
+<a th:href = "@{/}">Home</a>
+
+    <h2>Using Advertiser-DB</h2>
+
+    <ul>
+        <li th:each="advertiser : ${advertisers}" th:utext="${advertiser}"></li>
+    </ul>
+
+</body>
+</html>
